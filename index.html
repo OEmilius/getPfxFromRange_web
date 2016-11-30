@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>getPfxFromRange</title>
+<style type="text/css">
+html{font:12px tahoma, sans-serif;}
+</style>
+
+
+<script type="text/javascript">
+
+function init() {
+	console.log("init")
+};
+</script>
+
+
+</head>
+<body onLoad="init();">
+<h3>Get phone(code) prefix from range</h3>
+Intput in textarea numbers range, delimeter=","
+<br>
+<form action="#" method="post">
+<textarea name="in_text" rows="10" cols="45">
+{{.Ranges}}
+</textarea>
+<p><input type="submit" value="Calc"></p>
+</form>
+<hr>
+Output pfx<br>
+<textarea rows="4" cols="45" name="out_text">
+{{.Pfxs}}
+</textarea>
+</body>
+</html>
